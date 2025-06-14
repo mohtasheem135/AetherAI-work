@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { useFormData } from "@/context/FormDataContext";
 import { MoveLeft } from "lucide-react";
+import Image from "next/image";
 
 export default function Step4_Photos({
   onBack,
@@ -84,11 +85,13 @@ export default function Step4_Photos({
       {/* Preview */}
       <div className="flex flex-wrap gap-4 mt-4">
         {previews.map((src, idx) => (
-          <img
+          <Image
             key={idx}
             src={src}
             alt={`Preview ${idx}`}
-            className="h-28 w-28 object-cover rounded-md border border-gray-200"
+            width={112} // 28 * 4 (1rem = 16px)
+            height={112}
+            className="object-cover rounded-md border border-gray-200"
           />
         ))}
       </div>

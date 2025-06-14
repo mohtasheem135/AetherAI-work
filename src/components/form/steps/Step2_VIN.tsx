@@ -4,10 +4,9 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { vinSchema, VinSchema } from "@/lib/validation/vinSchema";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { useFormData } from "@/context/FormDataContext";
-import { ArrowLeft, MoveLeft, MoveRight } from "lucide-react";
+import {  MoveLeft, MoveRight } from "lucide-react";
 
 export default function Step2_VIN({
   onNext,

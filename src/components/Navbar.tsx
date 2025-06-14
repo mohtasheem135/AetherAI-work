@@ -1,14 +1,14 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+// import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Image from 'next/image'
 import { LogOut } from 'lucide-react'
 
 export default function Navbar() {
-  const pathname = usePathname()
+  // const pathname = usePathname()
 
   return (
     <header className="absolute w-full top-0 z-50 backdrop-blur-sm">
